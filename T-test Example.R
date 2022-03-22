@@ -1,6 +1,13 @@
-# To Clear working environment
-rm(list=ls())
-graphics.off()
+##################################################################
+# The purpose of this R script is to demonstrate a T-test 
+# statistical analysis. This was made mostly for my own reference and a way to 
+# practice these functions so it is far from perfect or comprehensive,  
+# but I will share it for others who may find it helpful.
+#
+# Script by: Kim Fake
+#
+#
+###################################################################
 
 # load packages
 library(dplyr) # pretty much always load for filtering and manipulating data
@@ -50,7 +57,7 @@ bartlett.test(data$Percent_Grade, data$Class)
 t.test(class_1$Percent_Grade, class_2$Percent_Grade, paired=FALSE)  
 # p<0.05 would indicate a significant difference
 # thus we cannot reject the null hypothesis
-# Null Hypothesis: there is no difference in percent grade between the two classes
+# Null Hypothesis: there is no difference in mean percent grade between the two classes
 
 
 
